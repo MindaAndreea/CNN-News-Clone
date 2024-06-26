@@ -1,0 +1,336 @@
+:root {
+  --color-black: #0c0c0c;
+  --color-links-header: rgb(191, 191, 191);
+  --color-white: #fff;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  color: var(--color-links-header);
+  background-color: var(--color-black);
+}
+.header-container {
+  width: 1100px;
+  margin: 0 auto;
+  height: 100%;
+}
+.header-container-left {
+  float: left;
+  display: flex;
+  height: 100%;
+}
+.header-container-left-logo {
+  position: relative;
+  width: 60px;
+}
+.header-container-left-logo img {
+  position: absolute;
+  width: 100%;
+}
+.header-container-left-links ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 15px;
+}
+.header-container-left-links ul li {
+  margin: 0 0 0 5px;
+  text-transform: capitalize;
+}
+.header-container-left-links ul li::after {
+  content: "|";
+  margin-left: 5px;
+}
+.header-container-left-links ul li:last-child::after {
+  content: "";
+}
+.header-container-left-links ul a {
+  color: inherit !important;
+}
+.header-container-left-links ul a:hover {
+  color: var(--color-white) !important;
+}
+.header-container-right {
+  float: right;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header-container-right-international-edition {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.header-container-right-international-edition #international-switcher:checked ~ .international-block {
+  display: block;
+}
+.header-container-right-international-edition .international-block {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 50px;
+  text-align: right;
+  padding: 8px 15px 15px;
+  width: 250px;
+  left: -70px;
+  font-weight: 300;
+  display: none;
+}
+.header-container-right-international-edition .international-block ul li {
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.header-container-right-international-edition .international-block hr {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid #bfbfbf;
+  margin-bottom: 15px;
+}
+.header-container-right-international-edition .international-block p {
+  margin-bottom: 15px;
+}
+.header-container-right-international-edition .international-block .flex-block {
+  display: flex;
+}
+.header-container-right-international-edition .international-block .edition-preference-container.flex-block {
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.header-container-right-international-edition .international-block .edition-preference-container.flex-block label:nth-of-type(1) {
+  margin-right: auto;
+}
+.header-container-right-international-edition .international-block .edition-preference-container.flex-block label {
+  margin-right: 5px;
+}
+.header-container-right-international-edition .international-block .edition-preference-container .confirm {
+  background-color: transparent;
+  border: 1px solid #bfbfbf;
+  line-height: 30px;
+  color: #bfbfbf;
+  height: 30px;
+  padding: 0 15px;
+  font-size: 15px;
+}
+.header-container-right-page-search {
+  position: relative;
+}
+.header-container-right-page-search #search-switcher:checked ~ .page-search-field,
+.header-container-right-page-search #search-switcher:checked ~ .page-search-field-label {
+  display: block;
+}
+.header-container-right-page-search .page-search-field,
+.header-container-right-page-search .page-search-field-label {
+  position: absolute;
+  right: 40px;
+  top: -7px;
+  height: 30px;
+  line-height: 30px;
+  display: none;
+}
+.header-container-right-page-search .page-search-field {
+  width: 970px;
+  font-size: 16px;
+  padding: 3.5px;
+  padding-left: 5px;
+  font-weight: 300;
+}
+.header-container-right-page-search .page-search-field-label {
+  background: transparent;
+  width: 100px;
+  color: var(--color-black);
+}
+.header-container-right-page-search .page-search-field-label span {
+  font-size: 9px;
+  font-weight: 600;
+  margin-left: 5px;
+  height: inherit;
+  line-height: inherit;
+}
+.header-container-right-page-search .search-switcher-label {
+  margin: 0 15px;
+}
+.header-container-right-hamburger-menu #hamburger-menu:checked ~ .header-container-right-hamburger-menu-container {
+  display: block;
+}
+.header-container-right-hamburger-menu-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  top: 50px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  display: none;
+}
+.header-container-right-hamburger-menu-container-top {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  width: 1100px;
+  margin: 0 auto;
+}
+.header-container-right-hamburger-menu-container-top h3 {
+  font-size: 22px;
+}
+.header-container-right-hamburger-menu-container-top a {
+  color: #bfbfbf !important;
+  font-size: 16px;
+}
+.header-container-right-hamburger-menu-container-top p {
+  cursor: pointer;
+}
+.header-container-right-hamburger-menu-container-top p:hover {
+  color: #e2e0e0;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: CNN, Helvetica Neue, Helvetica, Arial, Utkal, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link,
+a:active {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+label:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=main-styling.css.map */
