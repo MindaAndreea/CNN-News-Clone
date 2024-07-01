@@ -1,9 +1,10 @@
 :root {
   --color-black: #0c0c0c;
-  --color-links-header: rgb(191, 191, 191);
+  --color-links-a: rgb(191, 191, 191);
   --color-white: #fff;
 }
 
-@import "header";
 @import "reset";
+@import "header";
+@import "center-part";
 @import "footer";

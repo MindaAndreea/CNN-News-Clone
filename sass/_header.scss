@@ -1,7 +1,7 @@
 .header {
   height: 50px;
   width: 100%;
-  color: var(--color-links-header);
+  color: var(--color-links-a);
   background-color: var(--color-black);
 
   &-container {
@@ -219,8 +219,8 @@
               font-weight: 300;
             }
 
-            p:hover {
-              color: #e2e0e0;
+            a:hover {
+              color: #e2e0e0 !important;
             }
           }
 
