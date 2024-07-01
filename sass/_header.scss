@@ -21,6 +21,7 @@
         img {
           position: absolute;
           width: 100%;
+          z-index: 20;
         }
       }
 
@@ -183,7 +184,6 @@
 
         &-container {
           width: 100%;
-          height: 100%;
           margin: 0 auto;
           top: 50px;
           right: 0;
@@ -198,22 +198,84 @@
             gap: 15px;
             width: 1100px;
             margin: 0 auto;
+            padding-top: 15px;
 
             h3 {
               font-size: 22px;
+              font-weight: 300;
+              color: white;
+              margin-top: 10px;
+              padding-bottom: 10px;
             }
 
             a {
               color: #bfbfbf !important;
-              font-size: 16px;
+              line-height: 1.5;
             }
 
             p {
               cursor: pointer;
+              font-size: 13.5px;
+              font-weight: 300;
             }
 
             p:hover {
               color: #e2e0e0;
+            }
+          }
+
+          &-bottom {
+            display: flex;
+            align-items: center;
+            width: 59%;
+            margin: 0 auto;
+            padding: 10px;
+
+            .languages {
+              margin-right: 30px;
+
+              ul {
+                display: flex;
+
+                li {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  text-align: center;
+                  color: white;
+                  margin-right: 5px;
+
+                  img {
+                    height: 30px;
+                    margin-right: 5px;
+                  }
+                }
+              }
+            }
+
+            .preferences {
+              display: flex;
+              font-size: 13px;
+              align-items: center;
+
+              p {
+                margin: 0 15px 0 15px;
+              }
+
+              label {
+                margin-right: 15px;
+              }
+
+              .confirm {
+                background-color: transparent;
+                border: 1px solid #bfbfbf;
+                line-height: 30px;
+                color: #bfbfbf;
+                height: 30px;
+                padding: 0 15px;
+                font-size: 15px;
+                cursor: pointer;
+              }
             }
           }
         }
